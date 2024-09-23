@@ -1,0 +1,24 @@
+{
+  "name": "o1js-browser-ext-repro",
+  "type": "module",
+  "scripts": {
+    "build": "parcel build --no-cache src/manifest.json --config @parcel/config-webextension"
+  },
+  "dependencies": {
+    "o1js": "^1.8.0",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.12.0",
+    "@tsconfig/bun": "^1.0.7",
+    "@types/bun": "latest",
+    "@types/webextension-polyfill": "^0.12.1",
+    "parcel": "^2.12.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "alias": {
+    "o1js": "./node_modules/o1js/dist/node/index.js"
+  }
+}
